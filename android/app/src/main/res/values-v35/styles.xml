@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="UCropTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowOptOutEdgeToEdgeEnforcement">true</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowTitleStyle">@style/CropTitleStyle</item>
+        <item name="android:windowTitleBackgroundStyle">@style/CropTitleStyleBg</item>
+    </style>
+</resources>
