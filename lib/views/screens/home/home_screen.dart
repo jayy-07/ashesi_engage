@@ -248,44 +248,44 @@ class HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateMi
               ),
             ),
             bottomNavigationBar: AnimatedBuilder(
-              animation: _hideAnimation,
-              builder: (context, child) {
+                  animation: _hideAnimation,
+                  builder: (context, child) {
                 return Transform.translate(
                   offset: Offset(0, 56 * _hideAnimation.value),
                   child: child,
                 );
               },
-              child: NavigationBar(
-                selectedIndex: _selectedIndex,
+                        child: NavigationBar(
+                          selectedIndex: _selectedIndex,
                 onDestinationSelected: onNavBarTap,
                 destinations: const [
-                  NavigationDestination(
+                            NavigationDestination(
                     icon: Icon(Icons.home_outlined),
                     selectedIcon: Icon(Icons.home),
-                    label: 'Home',
-                  ),
-                  NavigationDestination(
+                              label: 'Home',
+                            ),
+                            NavigationDestination(
                     icon: Icon(Icons.lightbulb_outline),
                     selectedIcon: Icon(Icons.lightbulb),
-                    label: 'Proposals',
-                  ),
-                  NavigationDestination(
+                              label: 'Proposals',
+                            ),
+                            NavigationDestination(
                     icon: Icon(Icons.forum_outlined),
                     selectedIcon: Icon(Icons.forum),
-                    label: 'Forum',
-                  ),
-                  NavigationDestination(
+                              label: 'Forum',
+                            ),
+                            NavigationDestination(
                     icon: Icon(Icons.poll_outlined),
                     selectedIcon: Icon(Icons.poll),
-                    label: 'Polls',
-                  ),
-                  NavigationDestination(
+                              label: 'Polls',
+                            ),
+                            NavigationDestination(
                     icon: Icon(Icons.event_outlined),
                     selectedIcon: Icon(Icons.event),
-                    label: 'Events',
-                  ),
-                ],
-              ),
+                              label: 'Events',
+                            ),
+                          ],
+                        ),
             ),
           );
         },
